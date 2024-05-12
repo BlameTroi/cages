@@ -1,0 +1,9 @@
+To Compile:
+	edit make file  to use your home directory , bin , c compiler, etc.
+	make br
+To run:
+	br < data
+
+Sample data:
+	AtkL
+	subsetsum

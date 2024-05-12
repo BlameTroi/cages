@@ -1,0 +1,31 @@
+
+In this directory is c++ code that implements 
+the algorithms described in Sections:
+
+	5.5.1   A simulated anealing algorithm 
+		 "for the Knapsack (optimzation) problem."
+of 
+
+"Combinatorial Algorithms: Generation Enumeration and Search"
+by D.L. Kreher and D.R. Stinson
+CRC Press (1998).
+
+The files included are:
+
+
+
+File name	contents/purpose
+
+README		This message
+
+sa.c		Algorithms 5.20.
+
+	remark: see the top of sa.c for more detail
+
+sample		sample input data
+
+makefile	The makefile for compiling the programs.
+
+To compile the programs first check the makefile to see if it 
+calls the c++ compiler on your machine with the right flags, etc.
+Then type  "make all"

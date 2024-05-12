@@ -1,0 +1,41 @@
+In this directory is c++ code that implements 
+the algorithms described in Sections:
+
+        4.6.2  The traveling salesman problem
+	4.7   Branch and bound
+
+of 
+
+"Combinatorial Algorithms: Generation Enumeration and Search"
+by D.L. Kreher and D.R. Stinson
+CRC Press (1998).
+
+The files included are:
+
+
+
+File name	contents/purpose
+
+README		This message
+
+defs.h		header file
+setlib0.h	header file
+
+setlib0.c	Library of elementary set operations.
+
+tsp.c		Algorithms 4.10, 4.11, 4.12, 4.13, and 4.23
+		for solutions to the Traveling salesman problem.
+
+	remark: Check the top of tsp.c for more detail.
+
+rtsp.c		A an algorithm for generating random data for tsp.
+seed		A file that contains a seed for the random number 
+		generator.
+
+sample		Sample data for tsp.
+
+makefile	The makefile for compiling the programs.
+
+To compile the programs first check the makefile to see if it 
+calls the c++ compiler on your machine with the right flags, etc.
+Then type  "make all"

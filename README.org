@@ -1,0 +1,9 @@
+* Combinatorial Algorithms: Generation, Enumeration, and Search.
+
+Source code for examples from _Combinatorial Algorithms: Generation, Enumeration, and Search_ by Kreher and Stinson.
+
+This is an arcive copy of the code provided at Kreher's website for the C.A.G.E.S textbook [[https://pages.mtu.edu/~kreher/cages.html][here]]. The original files were provided as gzipped tar archives at: https://pages.mtu.edu/~kreher/cages/Src.html
+
+There's nothing original here by me. I just figured posting the unarchived source might save some time for others. The original commit will be unaltered, but I will probably update the makefiles and source to work with clang on MacOS.
+
+Troy Brumley, May 2024.

@@ -1,0 +1,39 @@
+In this directory is c++ code that implements 
+the algorithms described in Sections:
+
+	5.6   A genetic algorithm for the traveling salesman problem
+
+of 
+
+"Combinatorial Algorithms: Generation Enumeration and Search"
+by D.L. Kreher and D.R. Stinson
+CRC Press (1998).
+
+The files included are:
+
+
+
+File name	contents/purpose
+
+README		This message
+
+defs.h		header file
+setlib0.h	header file
+
+setlib0.c	Library of elementary set operations.
+
+GA.c		Algorithm 5.26 a genetic algorithm for TSP
+
+	remark: Check the top of GA.c for more detail.
+
+seed		seed for the random number generator
+
+M50a		Data used to construct Tables 5.7 5.8
+M50b		Data used to construct Tables 5.7 5.8
+M50c		Data used to construct Tables 5.7 5.8
+
+makefile	The makefile for compiling the programs.
+
+To compile the programs first check the makefile to see if it 
+calls the c++ compiler on your machine with the right flags, etc.
+Then type  "make all"

@@ -1,0 +1,117 @@
+In this directory is a set of libraries
+written in c++ code that implements 
+the algorithms described in Sections:
+
+	6.1: Groups
+	6.2: Permutation Groups
+	6.3: Orbits of Subsets
+	6.4: Coset representatives
+	6.5: Orbits 0f k-tuples
+	6.6: Generating objects having automorphisms
+
+of 
+
+"Combinatorial Algorithms: Generation Enumeration and Search"
+by D.L. Kreher and D.R. Stinson
+CRC Press (1998).
+
+These libraries can be used to implement sophisticated programs
+for investigating combinatorial configurations having assumed
+automorphisms. Some sample programs are included and in the
+future we will have have more examples.
+
+The files included are:
+
+File name	contents/purpose
+
+base.h		header file
+graphlib.h	header file
+grouplib.h	header file
+isolib.h	header file
+orblib.h	header file
+setlib.h	header file
+
+base.c		Library of basic allocation operations.
+graphlib.c	Library of graph operations.
+grouplib.c	Library of group operations.
+isolib.c	Library of isomorphism operations.
+orblib.c	Library of orbit operations.
+setlib.c	Library of set operations.
+
+descert.c	Compute the certificate of one or many  set-systems. 
+		 (See Section 7.4.2).
+		 Also determines automorphism group.
+cert.c		Compute the certificate of a graph. (See Algorithm 7.9).
+		 Also determines automorphism group.
+manycert.c	Computes the certificate of several graphs.
+disp.c		Display a list of sets given by there ranks 
+		 in usual notation.
+excover.c	The exact cover algorithm in section 4.5.
+gen.c		Generate the Schrier-Sims representation of a group 
+		 from generators.  (See section 6.2.3.)
+identity.c	Construct the identity group.
+list.c		List all the elements of a group, that is given by a 
+		 Schrier-Sims representation.
+norb.c		Compute the number of orbits of k-subsets under 
+		 the action of a group.  (See section 6.3.1.)
+onksets.c	Get the action of the group on k-subsets.
+onpairs.c	Get the action of the group on unordered pairs.
+packsets.c	Compute the ranks of a list of sets given in 
+		 usual notation.
+reps.c		Compute orbit representatives of the action of a group 
+		 on k-subsets.  (See section 6.4.)
+ext.c		Extract solutions.
+transpose.c	Transpose a matrix.
+
+getorbits.c	Computes them members of the orbits from their 
+		 representatives.
+
+mat.c		Compute orbit incidence matrix
+mat2set.c	mat2set - Convert a (0,1) matrix to a file of sets
+		written by their SubsetLexRanks. This is input 
+		 for excover.  (See the end of Section 6.6.)
+matsum.c
+transversal.c 	Computes a set of coset representatives of
+		a subgroup H in a group G.
+
+makefile	The makefile for compiling the programs.
+
+The tops of most of the .c files given some indication on how to use them.
+
+To compile the programs first check the makefile to see if it 
+calls the c++ compiler on your machine with the right flags, etc.
+
+Edit the variable:
+
+HOME = /home/math/kreher
+
+to be your home directory.
+
+Edit the variable:
+
+BIN = $(HOME)/bin
+
+to be the place where you put your executable code.
+
+Edit the variable:
+
+CC = gcc -O2 -msupersparc
+
+to have the correct compiler, optimization level, and machine architecture.
+
+If you are not on a UNIX platform it may also be necessary to
+Edit the variables:
+
+MV = mv
+OBJ = o
+EXE =
+
+For example on a PC it is probably
+
+MV = move
+OBJ = obj
+EXE = exe
+
+Make sure your path variable includes this directory
+
+Then type  "make all"  and "rehash" (for UNIX)

@@ -1,0 +1,35 @@
+In this directory is c++ code that implements 
+the algorithms described in Sections:
+
+	4.5   Exact Cover
+
+of 
+
+"Combinatorial Algorithms: Generation Enumeration and Search"
+by D.L. Kreher and D.R. Stinson
+CRC Press (1998).
+
+The files included are:
+
+
+
+File name	contents/purpose
+
+README		This message
+
+defs.h		header file
+setlib0.h	header file
+
+setlib0.c	Library of elementary set operations.
+
+excover.c	Algorithm 4.6 for solutions to the Exact Cover Problem 
+
+	remark: Check the top of excover.c for more detail.
+
+sample		A sample Exact Cover Problem
+
+makefile	The makefile for compiling the programs.
+
+To compile the programs first check the makefile to see if it 
+calls the c++ compiler on your machine with the right flags, etc.
+Then type  "make all"

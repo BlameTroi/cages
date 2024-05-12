@@ -1,0 +1,43 @@
+In this directory is c++ code that implements 
+the algorithms to solve 
+	Problem 4.1 Knapsack (optimization)
+that are described in Sections:
+
+	4.1   Introduction
+	4.2   A general backtrack algorithm
+	4.6   Bounding functions
+of 
+
+"Combinatorial Algorithms: Generation Enumeration and Search"
+by D.L. Kreher and D.R. Stinson
+CRC Press (1998).
+
+The files included are:
+
+
+
+File name	contents/purpose
+
+README		This message
+
+
+knaps1.c	Algorithm 4.1.
+knaps2.c	Algorithm 4.3.
+knaps3.c	Algorithms 4.8 and 4.9.
+knaps123.c	Algorithms 4.1, 4.3, 4.8 and 4.8.
+randks.c	Generates random instances of
+		Problem 4.1 Knapsack (optimization).
+
+  remark: Check the top of files for more details.
+
+seed		File containing seed for the random
+		number generator.
+
+Sample		File containing sample data.
+
+makefile	The makefile for compiling 
+                the programs.
+
+To compile the programs first check the makefile 
+to see if it calls the c++ compiler on your machine 
+with the right flags, etc.  Then type  "make all"

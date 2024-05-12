@@ -1,0 +1,43 @@
+In this directory is c++ code that implements 
+the algorithms described in Sections:
+
+	4.3   Generating All Cliques.
+	4.6.3 The Maximum Clique Problem
+
+of 
+
+"Combinatorial Algorithms: Generation Enumeration and Search"
+by D.L. Kreher and D.R. Stinson
+CRC Press (1998).
+
+The files included are:
+
+
+File name	contents/purpose
+
+README		This message
+
+defs.h		header file
+setlib0.h	header file
+
+setlib0.c	Library of elementary set operations.
+
+allcliq.c	Algorithm 4.4  for computing all of the cliques.
+maxc.c		Algorithm 4.19 for computing a maximum clique.
+rg.c		Algorithm 4.20 for computing a random graph.
+
+	remark: Check the tops of these files for more details.
+
+seed		A file containing a seed for the random number
+		generator
+
+sample		A sample graph 
+
+makefile	The makefile for compiling the programs.
+
+To compile the programs first check the makefile to see if it 
+calls the c++ compiler on your machine with the right flags, etc.
+Then type  "make all"
+
+
+

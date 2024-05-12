@@ -1,0 +1,27 @@
+In this directory is c++ code that implements 
+the algorithms described in Sections:
+
+	5.4   A hilclimbing qlgorithm for
+		Steiner triple systems
+
+of 
+
+"Combinatorial Algorithms: Generation Enumeration and Search"
+by D.L. Kreher and D.R. Stinson
+CRC Press (1998).
+
+The files included are:
+
+
+
+File name	contents/purpose
+
+README		This message
+
+stinsonalg.c	Algorithms 5.12-5.19
+
+makefile	The makefile for compiling the programs.
+
+To compile the programs first check the makefile to see if it 
+calls the c++ compiler on your machine with the right flags, etc.
+Then type  "make all"
