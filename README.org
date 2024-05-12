@@ -7,3 +7,29 @@ This is an arcive copy of the code provided at Kreher's website for the C.A.G.E.
 There's nothing original here by me. I just figured posting the unarchived source might save some time for others. The original commit will be unaltered, but I will probably update the makefiles and source to work with clang on MacOS.
 
 Troy Brumley, May 2024.
+
+** Changes and alterations
+
+The source is from the 1990s. Today, our tooling is better and the warnings are more strict. I will make minor changes along the way as I build and examine the code. So far, this is what I see being done.
+
+*** makefiles
+
+- the c compiler changes to clang:
+  ~CC = clang -O~
+- the home directory and build output directory changes to ./build:
+  ~HOME = .~
+  ~BIN = $(HOME)/build/~
+
+*** includes
+
+I'll use ~include-what-you-use~ to clean up include directives.
+
+*** source code
+
+I use clang, clangd/clang-tidy, emacs, and astyle. As I touch the code it will be reformatted on save to match my preferences, but the original is always at v1.0.0.
+
+I use attached braces, always brace around single line blocks, 3 space indents, and space around operators. The exact options to astyle are:
+
+~--style=attach -s3 -xn -xc -xk -xV -H -U -j -xB -xD -p~
+
+Warnings for missing function prototypes will be fixed as I find them. So far, no other changes appear to be needed.

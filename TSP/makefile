@@ -1,9 +1,9 @@
 #****** Your home directory
-HOME = /home/math/kreher
+HOME = .
 #****** Where you want the executable code to go
-BIN = $(HOME)/bin
+BIN = $(HOME)/build/
 
-CC = gcc -O
+CC = clang -O
 MV = mv
 OBJ = o
 EXE = 
