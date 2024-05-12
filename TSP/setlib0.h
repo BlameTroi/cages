@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 typedef unsigned int UINT;
 typedef UINT * set;
 typedef set* setlist;

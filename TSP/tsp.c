@@ -38,7 +38,7 @@ setlist C;
 int n, CurCost;
 int optC;
 int NODES;
-int (*Bound)();
+int (*Bound)(int m, int *x);
 
 
 void

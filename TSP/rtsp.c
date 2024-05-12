@@ -38,9 +38,7 @@ int MAX;
 FILE *f;
 
 double
-genalea(x0)
-int *x0;
-{
+genalea(int *x0) {
    int m = 2147483647;
    int a = 16807;
    int b = 127773;

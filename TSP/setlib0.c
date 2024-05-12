@@ -3,6 +3,7 @@
 #include <string.h>
 #include "defs.h"
 #include "setlib0.h"
+
 int WORDS;
 set V = NULL;
 set _AuxSet1 = NULL;
